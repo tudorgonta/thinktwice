@@ -4,14 +4,19 @@
         <meta charset="utf-8">
         <title>ThinkTwice</title>
         <link rel="stylesheet" href="styles.css">
+        <!--FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4b5a9d574d.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!--Start Nav-->
         <nav>
-            <h3>ThinkTwice</h3>
+            <h3 class="bold">ThinkTwice</h3>
             <ul>
-                <li class="orange"><a href="skyrocket.html">SkyRocket your Sales!</a></li>
-                <li><a href="#">Price</a></li>
+                <li><a href="#" class="orange">SkyRocket your Sales!</a></li>
+                <li><a href="#prices">Price</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -24,36 +29,38 @@
         <!--Start Hero-->
         <section id="hero">
             <div class="left">
-                <h1>- Don't Have any orders?<br><span class="boost">boost</span> your sales with a targeted Custom Audience</h1>
+                <h3>- Don't Have any orders?<h3><h1><span class="large orange extra-bold">boost</span> your sales <br><span style="font-size: 36px">with a</span> targeted <br><span class="large orange bold">Custom Audience</span></h1>
                 <p>ThinkTwice helps small ecommerce businesses in building custom lists which can be used to get sales!</p>
-                <a href="#" class="btn">Discover More</a>
-                <a href="#">Watch Video</a>
+                <div class='center'>
+                <button><a href="#works">Discover More</a></button>
+                    <a href="#">Watch Video</a>
+                </div>
             </div>
-            <img src="assets/hero.img" alt="Rocket"/>
+            <img src="assets/hero.jpg" alt="Rocket" width="auto" height="auto"/>
         </section>
         <!--End Hero-->
 
         <!--Start HTW-->
         <section id="works">
-            <h2>How ThinkTwice works?</h2>
+            <h2>How <span class="bold">ThinkTwice</span> works?</h2>
             <p>ThinkTwice gathers customer lists by targeting people that match your <span class="orange">ideal target audience.</span></p>
             <ul class="container">
                 <li class="item">   <!--Item 1-->
-                    <img src="#" alt="#"/>
+                    <i class="fas fa-clipboard-list fa-7x"></i>
                     <h4>Find the plan that best suits you</h4>
-                    <a href="#" class="btn">View Plans</a>
+                    <button><a href="#prices">View Plans</a></button>
                 </li>
                 <li class="item">   <!--Item 2-->
-                    <img src="#" alt="#"/>
+                    <i class="fas fa-keyboard fa-7x"></i>
                     <h4>Answer a few questions about your ideal customer</h4>
                 </li>
-                <li class="item">   <!--Item 3-->
-                    <img src="#" alt="#"/>
+                <li class="item note">   <!--Item 3-->
+                    <i class="fas fa-network-wired fa-7x"></i>
                     <h4>Let ThinkTwice do the work</h4>
-                    <p class="note">*It takes 2-3 days for  a complete process (we might contact you)</p>
+                    <p>*It takes 2-3 days for  a complete process (we might contact you)</p>
                 </li>
                 <li class="item">   <!--Item 4-->
-                    <img src="#" alt="#"/>
+                    <i class="fas fa-cloud-download-alt fa-7x"></i>
                     <h4>Easily export/filter your custom list</h4>
                 </li>
             </ul>
@@ -62,14 +69,79 @@
 
         <!--Start Email-->
         <section id="email">
-            <h2>View a customer list sample!</h2>
-            <p>Enter your email to get the sample data</p>
-            <form action="#">
-                <input type="email" id="email" name="email" placeholder="Enter email...">
-                <input type="submit" value="Get sample data">
-            </form>
+            <div class="email">
+                <h2>View a customer list sample!</h2>
+                <p>Enter your email to get the sample data</p>
+                <form action="#">
+                    <input type="email" id="email" name="email" placeholder="Enter email..."><!-- no whitespace
+                    --><input type="submit" value="GET SAMPLE DATA">
+                </form>
+            </div>
         </section>
         <!--End Email-->
+
+        <!--Start Prices-->
+        <section id="prices">
+            <h2><span class="orange">Plans</span> available</h2>
+            <p>Pay only for data that matches your ideal audience</p>
+            <ul class="container">
+                <li class="item">   <!--Item 1-->
+                    <div class="top-card">
+                        <div class="top-card-text">
+                            <h3>Basic</h3>
+                            <p>Customer List</p>
+                        </div>
+                        <p class="price orange">£79</p>
+                    </div>
+                    <ul class="sub-container">
+                        <li class="sub-item"><i class="fas fa-check-circle"></i>Custom Filtering</li>
+                        <li class="sub-item bold"><i class="fas fa-check-circle"></i>200 entries in the list</li>
+                        <li class="sub-item"><i class="fas fa-check-circle"></i>Free 30-min Call With an Email marketing Expert</li>
+                        <li class="sub-item"><i class="fas fa-check-circle"></i>Custom Filtering</li>
+                        <li class="sub-item"><i class="fas fa-check-circle"></i>Custom Filtering</li>
+                    </ul>
+                    <button><a href="#">Buy Now</a></button>
+                    <p class="note">*All major cards accepted and PayPal available at checkout</p>
+                </li>
+                <li class="item special">   <!--Item 2-->
+                    <div class="top-card">
+                        <div class="top-card-text">
+                            <h3>Advanced</h3>
+                            <p>Customer List</p>
+                        </div>
+                        <p class="price">£300</p>
+                    </div>
+                    <ul class="sub-container">
+                        <li class="sub-item"><i class="fas fa-check-circle"></i>Custom Filtering</li>
+                        <li class="sub-item bold"><i class="fas fa-check-circle"></i>200 entries in the list</li>
+                        <li class="sub-item"><i class="fas fa-check-circle"></i>Custom Filtering</li>
+                        <li class="sub-item"><i class="fas fa-check-circle"></i>Custom Filtering</li>
+                        <li class="sub-item"><i class="fas fa-check-circle"></i>Custom Filtering</li>
+                    </ul>
+                    <button><a href="#">Buy Now</a></button>
+                    <p class="note">*All major cards accepted and PayPal available at checkout</p>
+                </li>
+                <li class="item">   <!--Item 3-->
+                    <div class="top-card">
+                        <div class="top-card-text">
+                            <h3>Expert</h3>
+                            <p>Customer List</p>
+                        </div>
+                        <p class="price">£700+</p>
+                    </div>
+                    <ul class="sub-container">
+                        <li class="sub-item"><i class="fas fa-check-circle"></i>Custom Filtering</li>
+                        <li class="sub-item bold"><i class="fas fa-check-circle"></i>200 entries in the list</li>
+                        <li class="sub-item"><i class="fas fa-check-circle"></i>Custom Filtering</li>
+                        <li class="sub-item"><i class="fas fa-check-circle"></i>Custom Filtering</li>
+                        <li class="sub-item"><i class="fas fa-check-circle"></i>Custom Filtering</li>
+                    </ul>
+                    <button><a href="#">Buy Now</a></button>
+                    <p class="note">*All major cards accepted and PayPal available at checkout</p>
+                </li>
+            </ul>
+        </section>
+        <!--End Prices-->
 
         <!--Start Info-->
         <section id="info">
@@ -77,72 +149,24 @@
             <p>Ad Platforms where you can use the customer list:</p>
             <ul class="container">
                 <li class="item">   <!--Item 1-->
-                    <img src="#" alt="#"/>
+                    <i class="fab fa-facebook fa-7x"></i>
                     <h4>FaceBook Ads</h4>
                 </li>
                 <li class="item">   <!--Item 2-->
-                    <img src="#" alt="#"/>
+                    <i class="fab fa-instagram fa-7x"></i>
                     <h4>Instagram</h4>
                 </li>
                 <li class="item">   <!--Item 3-->
-                    <img src="#" alt="#"/>
+                    <i class="fab fa-google fa-7x"></i>
                     <h4>Google Ads</h4>
                 </li>
                 <li class="item">   <!--Item 4-->
-                    <img src="#" alt="#"/>
+                    <i class="fas fa-envelope-open-text fa-7x"></i>
                     <h4>Email Marketing</h4>
                 </li>
             </ul>
         </section>
         <!--End Info-->
-
-        <!--Start Prices-->
-        <section id="prices">
-            <h2><span class="orange">Plans available</span></h2>
-            <p>Pay only for data that matches your ideal audience</p>
-            <ul class="container">
-                <li class="item">   <!--Item 1-->
-                    <img src="#" alt="#"/>
-                    <h3>Basic</h3>
-                    <p class="price">£79</p>
-                    <p>Customer List</p>
-                    <ul class="container">
-                        <li class="sub-item">Custom Filtering</li>
-                        <li lass="sub-item bold">200 entries in the list</li>
-                        <li class="sub-item">Custom Filtering</li>
-                    </ul>
-                    <a href="#" class="btn">Buy Now</a>
-                    <p class="note">*All major cards accepted and PayPal available at checkout</p>
-                </li>
-                <li class="item">   <!--Item 2-->
-                    <img src="#" alt="#"/>
-                    <h3>Advanced</h3>
-                    <p class="price">£350</p>
-                    <p>Customer List</p>
-                    <ul class="container">
-                        <li class="sub-item">Custom Filtering</li>
-                        <li lass="sub-item bold">200 entries in the list</li>
-                        <li class="sub-item">Custom Filtering</li>
-                    </ul>
-                    <a href="#" class="btn">Buy Now</a>
-                    <p class="note">*All major cards accepted and PayPal available at checkout</p>
-                </li>
-                <li class="item">   <!--Item 3-->
-                    <img src="#" alt="#"/>
-                    <h3>Expert</h3>
-                    <p class="price">£700+</p>
-                    <p>Customer List</p>
-                    <ul class="container">
-                        <li class="sub-item">Custom Filtering</li>
-                        <li lass="sub-item bold">200 entries in the list</li>
-                        <li class="sub-item">Custom Filtering</li>
-                    </ul>
-                    <a href="#" class="btn">Buy Now</a>
-                    <p class="note">*All major cards accepted and PayPal available at checkout</p>
-                </li>
-            </ul>
-        </section>
-        <!--End Prices-->
 
         <footer>
             Copyrights &copy; TG 2021
